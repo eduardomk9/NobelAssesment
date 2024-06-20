@@ -1,0 +1,14 @@
+C:\Tp\GenericSolutions\LirarySolution\NobelAssesments\UnicTopics\bin\Debug\net6.0\UnicTopics.exe
+C:\Tp\GenericSolutions\LirarySolution\NobelAssesments\UnicTopics\bin\Debug\net6.0\UnicTopics.deps.json
+C:\Tp\GenericSolutions\LirarySolution\NobelAssesments\UnicTopics\bin\Debug\net6.0\UnicTopics.runtimeconfig.json
+C:\Tp\GenericSolutions\LirarySolution\NobelAssesments\UnicTopics\bin\Debug\net6.0\UnicTopics.dll
+C:\Tp\GenericSolutions\LirarySolution\NobelAssesments\UnicTopics\bin\Debug\net6.0\UnicTopics.pdb
+C:\Tp\GenericSolutions\LirarySolution\NobelAssesments\UnicTopics\obj\Debug\net6.0\UnicTopics.GeneratedMSBuildEditorConfig.editorconfig
+C:\Tp\GenericSolutions\LirarySolution\NobelAssesments\UnicTopics\obj\Debug\net6.0\UnicTopics.AssemblyInfoInputs.cache
+C:\Tp\GenericSolutions\LirarySolution\NobelAssesments\UnicTopics\obj\Debug\net6.0\UnicTopics.AssemblyInfo.cs
+C:\Tp\GenericSolutions\LirarySolution\NobelAssesments\UnicTopics\obj\Debug\net6.0\UnicTopics.csproj.CoreCompileInputs.cache
+C:\Tp\GenericSolutions\LirarySolution\NobelAssesments\UnicTopics\obj\Debug\net6.0\UnicTopics.dll
+C:\Tp\GenericSolutions\LirarySolution\NobelAssesments\UnicTopics\obj\Debug\net6.0\refint\UnicTopics.dll
+C:\Tp\GenericSolutions\LirarySolution\NobelAssesments\UnicTopics\obj\Debug\net6.0\UnicTopics.pdb
+C:\Tp\GenericSolutions\LirarySolution\NobelAssesments\UnicTopics\obj\Debug\net6.0\UnicTopics.genruntimeconfig.cache
+C:\Tp\GenericSolutions\LirarySolution\NobelAssesments\UnicTopics\obj\Debug\net6.0\ref\UnicTopics.dll
