@@ -1,2 +1,6 @@
 # Ignorar diretório .vs do Visual Studio
 .vs/
+
+# Ignorar diretórios binários e compilados
+bin/
+obj/
