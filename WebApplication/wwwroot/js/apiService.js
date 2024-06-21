@@ -1,4 +1,4 @@
-﻿const apiUrl = 'https://localhost:7206'; // Substitua pela URL da sua Web API
+﻿const apiUrl = 'https://localhost:7206'; 
 
 function apiFetch(endpoint, options = {}) {
     const url = `${apiUrl}/${endpoint}`;

@@ -9,11 +9,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\WebApi\WebApi.csproj" />
+    <_ContentIncludedByDefault Remove="wwwroot\page\campaingn.html" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\html\" />
+    <ProjectReference Include="..\WebApi\WebApi.csproj" />
   </ItemGroup>
 
 </Project>

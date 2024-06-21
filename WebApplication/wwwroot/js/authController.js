@@ -9,11 +9,8 @@
 
         apiService.post('auth/signin', { mail, password })
             .then(response => {
-                // Armazenar o token (por exemplo, no localStorage)
-                console.log(response.token);
                 localStorage.setItem('token', response.token.accessToken);
-                // Redirecionar para a página após o login
-                //window.location.href = 'outra_pagina.html';
+                window.location.href = 'page/campaingn.html';
             })
             .catch(error => {
                 console.error('Erro na requisição:', error);
