@@ -1,25 +1,49 @@
+using Microsoft.AspNetCore.Mvc;
+using System.Globalization;
+using WebApi.Configurations;
+
 var builder = WebApplication.CreateBuilder(args);
+DependencyInjectionConfig.ConfigureServices(builder.Services, builder.Configuration);
 
-// Add services to the container.
-
-builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-
+var invariantCulture = CultureInfo.InvariantCulture;
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+app.UseRequestLocalization(new RequestLocalizationOptions
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+    DefaultRequestCulture = new Microsoft.AspNetCore.Localization.RequestCulture(invariantCulture),
+    SupportedCultures = new[] { invariantCulture },
+    SupportedUICultures = new[] { invariantCulture }
+});
+
+app.UseSwagger();
+app.UseSwaggerUI(c =>
+{
+    c.DefaultModelsExpandDepth(-1);
+});
+
+app.UseStaticFiles();
+app.UseCors(builder =>
+{
+    builder.AllowAnyOrigin()
+           .AllowAnyHeader()
+           .AllowAnyMethod();
+});
 
 app.UseHttpsRedirection();
-
 app.UseAuthorization();
+app.UseAuthentication();
 
-app.MapControllers();
+app.MapGet("/", () =>
+{
+    return Task.FromResult<IActionResult>(new OkResult());
+});
+
+
+#if DEBUG
+app.MapControllers()
+  .AllowAnonymous();
+#else
+ app.MapControllers();
+#endif
 
 app.Run();
