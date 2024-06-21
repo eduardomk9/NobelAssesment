@@ -1,17 +1,4 @@
 ﻿
-//using Application.Business;
-//using Core.Business;
-//using Core.Repositories;
-//using Core.Services;
-//using Core.Utils;
-//using Infrastructure.Persistence.Contexts;
-//using Infrastructure.Persistence.Repositories;
-//using Infrastructure.Services;
-//using Microsoft.AspNetCore.Authentication.JwtBearer;
-//using Microsoft.AspNetCore.OData;
-//using Microsoft.EntityFrameworkCore;
-//using Microsoft.IdentityModel.Tokens;
-//using Microsoft.OData.ModelBuilder;
 using Application.Business;
 using Core.Business;
 using Core.Mock;
@@ -30,9 +17,7 @@ using System.Text;
 using System.Text.Json.Serialization;
 using WebApi.Controllers;
 using WebAPI.Authentication;
-//using WebApi.Controllers;
-//using WebAPI.Authentication;
-//using WebAPI.Controllers;
+
 
 namespace WebApi.Configurations
 {
@@ -141,7 +126,7 @@ namespace WebApi.Configurations
                     }
 
                     // Lista de controladores que você deseja incluir no Swagger
-                    Type[] includedControllers = { typeof(AuthController) };
+                    Type[] includedControllers = { typeof(AuthController), typeof(SampleApiController) };
 
                     // Verifica se o controlador atual está na lista de controladores incluídos
                     bool isControllerIncluded = includedControllers.Contains(methodInfo.DeclaringType);
@@ -174,9 +159,11 @@ namespace WebApi.Configurations
             //services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             //Services       
             services.AddScoped<IAuthService, AuthService>();
+            services.AddScoped<ISampleApiService, SampleApiService>();
 
             //Business           
             services.AddScoped<IAuthBusiness, AuthBusiness>();
+            services.AddScoped<ISampleApiBusiness, SampleApiBusiness>();
 
             //Mocks
             services.AddScoped<IMockUsers, MockUsers>();
