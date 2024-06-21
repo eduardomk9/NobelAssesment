@@ -36,7 +36,7 @@ namespace WebApi.Controllers
         [HttpPost("SignIn")]
         [SwaggerResponse(200, "Informações", typeof(SignInResponseDto))]
         [SwaggerResponse(400, "Erro", typeof(string))]
-        public IActionResult SignInAsync([FromBody] SignInDto model)
+        public IActionResult SignIn([FromBody] SignInDto model)
         {
             try
             {
