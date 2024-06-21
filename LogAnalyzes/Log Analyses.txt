@@ -1,0 +1,19 @@
+LOGIN:
+//Here we start a the 'SpyServerStart' with the agente id to tech_jwrenn
+<2023-12-05T14:02:32.375 00 tech_jwrenn@Ktr[9d0]> [1::0xBBEC] Sending event: <Event><SpyServerStart><IdSupervisor>100000005</IdSupervisor><IdAgent>100000039</IdAgent><IdSession>1120587346</IdSession><IpRepeater></IpRepeater></SpyServerStart></Event>
+
+The Licenses:ççç
+Login: tech_jwrenn, Basicas: 1, Telefonia: 1, Marcador: 0, Grabacion: 1, Email: 0
+
+LOGOUT:
+//Here the session is being removed
+<2023-12-05T16:14:52.082 00 ASM[32c4]> [40::0x1E5F] AgentSesion removed: session_id: 100000059, agent_id: 100000039, puesto_id: 100000023, alive count: 1, removed count: 0
+<2023-12-05T16:14:52.082 00 tech_jwrenn@Coord[32c4]> [40::0x1E5F] Forzando chequeo de la caché debido al logout del agente tech_jwrenn.
+
+End transaction:
+<2023-12-05T16:45:25.893 00 EvoDboProv> Thrd(4d3c) - TRANSACCION: CerrarTransaccion(idTrans=100000016, idFinal=9, bReplan=0, sTProxCont=, lIntervalo=60, idLocalizador=-1)
+
+Later confirmation of DB:
+<2023-12-05T16:45:25.924 00 tech_jwrenn@TransMgr[457c]> [27:tech_jwrenn:0x351A] Transacción 100000016 finalizada en la BdD.
+<...> //Other Lines
+<2023-12-05T16:45:25.940 00 tech_jwrenn@Coord[457c]> [27:tech_jwrenn:0x351A] Transacción 100000016 finalizada (idFinal=9, Replan=NO, ProxCont=(empty), lIntervalo=60, lCuota=0)
