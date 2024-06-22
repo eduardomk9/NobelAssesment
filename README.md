@@ -43,7 +43,7 @@ A Framework for styles;</br>
 
 ## 🖥️ Used Technologies
 NET CORE 6;</br>
-SQL SERVER EXPRESS;</br>
+MS-SQL SERVER;</br>
 Data Annotations;</br>
 Entity Framework;</br>
 Swagger;</br>
@@ -91,7 +91,7 @@ Um Framework para estilos;</br>
 
 ## 🖥️ Tecnologias Usadas
 NET CORE 6;</br>
-SQL SERVER EXPRESS;</br>
+MS-SQL SERVER;</br>
 Data Annotations;</br>
 Entity Framework;</br>
 Swagger;</br>
