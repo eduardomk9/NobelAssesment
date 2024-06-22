@@ -30,7 +30,7 @@ start dotnet run
 
 ## 📋 Usage
 The Swagger is ready to use, if you run the project as Debug mode it will be not necessary to authenticate to call other methods, but if you dont, you have to authenticate with a login and password, use the MockUsers.cs to add more users, you can use teste1@email.com with 123456 for password for tests.
-The Front-End is integrated with back end, so if you run both yoi should be able to use front end in the localhost and port indicated in your powershell. if you need to change de port and url of api in front end update the file apiService.js
+The Front-End is integrated with back end, so if you run both you should be able to use front end in the localhost and port indicated in your powershell. if you need to change de port and url of api in front end update the file apiService.js. Texts imputed in the fields will save (in local storage)automatically soon the focus is not more the field.
 ![image](https://github.com/eduardomk9/NobelAssesment/assets/15438089/0cc1c88e-5fac-417e-9d1c-6cf6928dae4f)
 <img width="1277" alt="image" src="https://github.com/eduardomk9/NobelAssesment/assets/15438089/8faa7bb8-0656-420f-889d-c112704eaf44">
 
@@ -83,7 +83,7 @@ Para rodar o projeto localmente você deve ter o SDK para .net core 6 instalado,
 
 ## 📋 Uso
 O Swagger está pronto para uso, se você rodar o projeto no modo Debug não será necessário autenticar para chamar outros métodos, mas se você não fizer isso, terá que autenticar com um login e senha, use o MockUsers.cs para adicionar mais usuários, você pode usar teste1@email.com com 123456 como senha para testes.
-O Front-End está integrado com o back end, então se você rodar ambos, deverá conseguir usar o front end no localhost e na porta indicada no seu powershell. Se precisar mudar a porta e a URL da API no front end, atualize o arquivo apiService.js.
+O Front-End está integrado com o back end, então se você rodar ambos, deverá conseguir usar o front end no localhost e na porta indicada no seu powershell. Se precisar mudar a porta e a URL da API no front end, atualize o arquivo apiService.js.Os textos imputados nos campos serão salvos (no armazenamento local) automaticamente assim que o foco não for mais o campo.
 ![image](https://github.com/eduardomk9/NobelAssesment/assets/15438089/0cc1c88e-5fac-417e-9d1c-6cf6928dae4f)
 <img width="1277" alt="image" src="https://github.com/eduardomk9/NobelAssesment/assets/15438089/8faa7bb8-0656-420f-889d-c112704eaf44">
 
