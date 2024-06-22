@@ -14,7 +14,7 @@ namespace WebApi.Controllers
     [Authorize("Bearer")]
     [Authorize(AuthenticationSchemes = "CustomAuth")]
     [Route("[controller]")]
-    [Tags("Auth")]
+    [Tags("SampleApi")]
     [ApiController]
     public class SampleApiController: ControllerBase
     {

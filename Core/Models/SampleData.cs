@@ -5,6 +5,7 @@
         public string Description { get; set; } = null!;
         public string Type { get; set; } = null!;
         public string Topics { get; set; } = null!;
+        public string Url { get; set; } = null!;
 
     }
 }

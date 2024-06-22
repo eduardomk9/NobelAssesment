@@ -30,13 +30,13 @@ namespace Application.Business
             string jsonData = await _sampleApiService.GetDataFromApiAsync(url);
             List<CodingResource> resources = JsonSerializer.Deserialize<List<CodingResource>>(jsonData, options) ?? new();
 
-            List<SampleData> sampleDataList = resources.SelectMany(resource =>  resource.Types
-                             .SelectMany(type => resource.Topics.Select(topic => new SampleData
-                             {
-                                Description = resource.Description,
-                                Type = type,
-                                Topics = string.Join(", ", resource.Topics) 
-                             }))).ToList();
+            List<SampleData> sampleDataList = resources.Select(resource => new SampleData
+            {
+                Description = resource.Description,
+                Type = string.Join(", ", resource.Types), // Combina os Types em uma string
+                Topics = string.Join(", ", resource.Topics), // Combina os Topics em uma string
+                Url = resource.Url,
+            }).ToList();
 
             return sampleDataList;
         }
