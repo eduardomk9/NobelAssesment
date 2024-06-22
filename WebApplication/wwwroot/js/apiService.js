@@ -1,4 +1,4 @@
-﻿const apiUrl = 'https://localhost:7206'; 
+﻿const apiUrl = 'https://localhost:7206';
 
 function apiFetch(endpoint, options = {}) {
     const url = `${apiUrl}/${endpoint}`;
@@ -8,7 +8,7 @@ function apiFetch(endpoint, options = {}) {
         }
     };
 
-    options = { ...defaultOptions, ...options };
+    options.headers = { ...defaultOptions.headers, ...options.headers };
 
     return fetch(url, options)
         .then(response => {
@@ -22,8 +22,8 @@ function apiFetch(endpoint, options = {}) {
 }
 
 const apiService = {
-    get: (endpoint) => apiFetch(endpoint),
-    post: (endpoint, body) => apiFetch(endpoint, { method: 'POST', body: JSON.stringify(body) }),
-    put: (endpoint, body) => apiFetch(endpoint, { method: 'PUT', body: JSON.stringify(body) }),
-    delete: (endpoint) => apiFetch(endpoint, { method: 'DELETE' })
+    get: (endpoint, options = {}) => apiFetch(endpoint, { method: 'GET', ...options }),
+    post: (endpoint, body, options = {}) => apiFetch(endpoint, { method: 'POST', body: JSON.stringify(body), ...options }),
+    put: (endpoint, body, options = {}) => apiFetch(endpoint, { method: 'PUT', body: JSON.stringify(body), ...options }),
+    delete: (endpoint, options = {}) => apiFetch(endpoint, { method: 'DELETE', ...options })
 };

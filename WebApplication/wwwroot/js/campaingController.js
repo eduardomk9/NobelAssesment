@@ -1,10 +1,19 @@
 ﻿document.addEventListener('DOMContentLoaded', () => {
     const tableBody = document.getElementById('campaignTableBody');
-
-    // Replace with your actual API endpoint
     const apiEndpoint = 'SampleApi/GetSampleListAsync';
+    const bearerToken = localStorage.getItem('token'); 
 
-    apiService.get(apiEndpoint)
+    if (!bearerToken) {
+        console.error('No bearer token found in local storage');
+        return;
+    }
+
+    const headers = {
+        'Authorization': `Bearer ${bearerToken}`,
+        'Content-Type': 'application/json'
+    };
+
+    apiService.get(apiEndpoint, { headers })
         .then(data => {
             data.forEach(item => {
                 const row = tableBody.insertRow();

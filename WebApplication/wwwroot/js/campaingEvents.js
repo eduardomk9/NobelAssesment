@@ -36,7 +36,6 @@
         document.body.appendChild(modal);
     }
 
-    // Resto do código para salvar campos no LocalStorage
     const firstNameInput = document.getElementById('firstName');
     const lastNameInput = document.getElementById('lastName');
     const cityInput = document.getElementById('city');
