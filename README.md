@@ -11,7 +11,7 @@ WebApplication -> Front-End.</br>
 Applicaton - > Bussiness Logic Layer.</br>
 Core -> Models, Dto, Entities and Interfaces of Business, Interfaces of Services, Interfaces of WebServices and Interfaces of Repositorys</br>
 Infraestructure -> Persistence, Services, Contexts and Repositorys.</br>
-UnicFiles -> The consolo Log project asked on Assesment.</br>
+UnicFiles -> The console Log project asked on Assesment.</br>
 </br>
 We have also 2 extra folders</br>
 SQLFiles -> Sql resolutions PT1 e PT2 from assesment.</br>
