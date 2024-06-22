@@ -36,7 +36,7 @@ namespace WebApi.Controllers
         /// 
         /// You have to call this method with a token in the header.
         /// </remarks>
-        [HttpGet("SignIn")]
+        [HttpGet("GetSampleListAsync")]
         [SwaggerResponse(200, "Informações", typeof(SampleData))]
         [SwaggerResponse(400, "Erro", typeof(string))]
         public async Task<IActionResult> GetSampleListAsync()
