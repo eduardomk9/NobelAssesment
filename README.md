@@ -11,11 +11,11 @@ WebApplication -> Front-End.</br>
 Applicaton - > Bussiness Logic Layer.</br>
 Core -> Models, Dto, Entities and Interfaces of Business, Interfaces of Services, Interfaces of WebServices and Interfaces of Repositorys</br>
 Infraestructure -> Persistence, Services, Contexts and Repositorys.</br>
-UnicFiles -> The consolo Log project asked on Assesment.
-
-We have also 2 extra folders
-SQLFiles -> Sql resolutions PT1 e PT2 from assesment.
-LogAnalyzes -> LOG resolutions from assesment.
+UnicFiles -> The consolo Log project asked on Assesment.</br>
+</br>
+We have also 2 extra folders</br>
+SQLFiles -> Sql resolutions PT1 e PT2 from assesment.</br>
+LogAnalyzes -> LOG resolutions from assesment.</br>
 
 ## 🚀 Installation/Implemetation
 To run project in local you should have instaled the SDK for .net core 6, setup the startup to run both WepApi and WebApplication simultaniosly or enter in WebApi folder and run the comand below:
@@ -71,7 +71,7 @@ Application -> Camada de Lógica de Negócios.</br>
 Core -> Modelos, Dto, Entidades e Interfaces de Negócios, Interfaces de Serviços, Interfaces de WebServices e Interfaces de Repositórios.</br>
 Infrastructure -> Persistência, Serviços, Contextos e Repositórios.</br>
 UnicFiles -> O projeto de Log em console solicitado na Avaliação.</br>
-
+</br>
 Também temos 2 pastas extras:</br>
 SQLFiles -> Resoluções SQL PT1 e PT2 da avaliação.</br>
 LogAnalyzes -> Resoluções de LOG da avaliação.</br>
